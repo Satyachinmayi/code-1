@@ -1,0 +1,208 @@
+looping
+1. while
+2.for
+3.while else
+4.for else
+5.break
+6.continue
+7.pass
+** while syntax
+1.simple while
+2.nested while
+while(condition):
+examples:
+1.num=int(input("enter number "))
+i=0
+while(i<=num):
+    print(i)
+    i=i+1
+2.num=int(input("enter number "))
+i=0
+while(i<=num):
+    print(i,  end="  ")
+    i=i+1
+3. write a prgrm to calculate sum of n numbers?
+n=int(input("enter a number "))
+sum=0
+i=0
+while(i<=n):
+    sum=sum+i
+    i=i+1
+print(sum)
+     (or)
+n=int(input("enter a number "))
+sum=0
+i=0
+while(i<=n):
+    sum=sum+i
+    i=i+1
+    print(sum)
+
+
+*prgrm for 5 mulitiples
+n=int(input("enter a number "))
+sum=0
+i=0
+while(i<n):
+    sum=sum+n
+    i=i+1
+    print(sum)
+** WRITE A PROGRAM TO ADD ALL THE DIGITS IN A NUMBER
+n=int(input("enter a number "))
+sum=0
+while(n!=0):
+    r=n%10
+    sum=sum+r
+    n=n//10
+print(sum)
+**PROGRAM TO PRINT ONLY EVEN NUMBERS
+n=int(input("enter a number "))
+i=0
+while(i<=n):
+    if i%2==0:
+       print(i)
+    i=i+1
+ ** PROGRAM TO PRINT SUM OF EVEN NUMBERS
+n=int(input("enter a number: "))
+i=s=0
+while(i<=n):
+    if i%2==0:
+        s=s+i
+    i=i+1
+print(s)
+***n=int(input("enter a number: "))
+i=s=0
+while(i<=n):
+    if i%2!=0:
+       s=s+i
+    i=i+1
+print(s)    
+***n=int(input("enter a number: "))
+i=s= e=0
+while(i<=n):
+    if i%2==0:
+       e=e+1
+    else:
+        s=s+1
+    i=i+1    
+print('\n sum of odd',s)
+print('\n sum of even',e)
+**PROGRAM TO PRINT REVERSE OF A GIVEN NUMBER
+n=int(input("enter  a number "))
+temp=0
+while n!=0:
+   temp=n%10
+   print(temp,end='')
+
+   n=n//10
+**PROGRAM TO CONVERT DECIMAL TO BINARY
+dm=int(input("enter  a number "))
+bn=0
+i=0
+while dm!=0:
+    r=dm%2
+    bn=bn+r*(10**i)
+    dm=dm//2
+    i=i+1
+print(bn)
+    
+** PRGRM TO CONVERT BINARY TO DECIMAL
+bn=int(input("enter number"))
+dn=0
+i=0
+while bn!=0:
+     r=bn%10
+     dn=dn+r*(2**i)
+     bn=bn//10
+     i=i+1
+print(dn)
+ FOR LOOP
+1. RANGE FUNCTION
+2.LAMBDA FUNCTION
+range(n)-evaluates upto n-1
+range(7,11)-evaluates 7,8,9,10
+**for i in range(11):
+   print(i)
+**for i in range(1,21):
+   print(i,end=" ")
+**for i in range(1,21,2):
+   print(i,end=" ")
+**WRITE A PROGRAM TO CALCULATE THE TOTAL OF N NATURAL NUMBERS AND FIND ITS AVERAGE
+
+n=int(input("enter a number"))
+sum=0
+for i in range(1,n+1):
+    sum=sum+i
+print("avg is",sum/n)
+***MINI PROJECT
+PROGRAM FOR MATH TABLES
+n=int(input("enter from 1-10: "))
+print("multiplication table of ",n)
+print("------------------------")
+for i in range(1,11):
+    print(n,"X",i ,"=",n*i)
+**WRITE A PROGRAM TO CALCULATE FACTORIAL OF A GIVEN NUMBER
+n=int(input("enter from 1-10: "))
+fact=1
+for i in range(1,n+1):
+    fact=fact*i
+print(fact)
+**FIND THE SUMMATION OF GIVEN SERIES
+n=int(input())
+s=0
+for i in range(1,n+1):
+    a=1/i
+    s=s+a
+print(s)
+**1/2+2/3+3/4---------- program
+n=int(input())
+s=0
+for i in range(1,n+1):
+    a=i/i+1
+    s=s+a
+print(s)
+*****Given a maximum of four digit to the base 17 (10 – A, 11 – B, 12 – C, 13 – D … 16 – G} as input, output its decimal value.
+
+Test Cases
+Case 1
+Input – 1A
+Expected Output – 27
+Case 2
+Input – 23GF
+Expected Output – 10980
+***num=str(input())
+print(int(num,17))
+*****
+abc=[1,2,3,4,5,6,7]
+for i in abc:
+    if i==6:
+        break
+    print(i,end=" ")
+****abc=[1,2,'red',[1,2,3]]
+for i in abc:
+    if i==abc[3]:
+        break
+    print(i,end=" ")
+***
+abc=[1,2,'red',[1,2,3],'apple',5,6,7]
+for i in abc:
+    if i==abc[3]:
+        continue
+    print(i,end=" ")
+**PASS STATEMENT
+for letter in 'chinnu':
+    pass
+    print(letter)
+**CALENDAR
+import calendar
+y=int(input("enter the year:"))
+m = 1
+cal=calendar.TextCalendar(calendar.SUNDAY)
+i=1
+while i<=12:
+    cal.prmonth(y,i)
+    i+=1
+
+
+
+

@@ -1,0 +1,95 @@
+ ABCEDERIAN SERIES
+str1='ABCDEFG'
+str2="ate"
+for l in str1:
+    print((l+str2),end=" ")
+WRITE A PROGRAM TO EVALUATE LIST OF A CUBES TILL THE RABGE OF 10
+cubes=[]
+for i in range(11):
+    cubes.append(i**3)
+print(cubes)
+WRITE A PROGRAM TO FIND THE SUM AND MEAN OF SERIES 0-10
+list=[1,2,3,4,5,6,7,8,9,10]
+sum=0
+for i in list:
+    sum=sum+i
+print(sum)
+print(sum/10)
+OPERATIONS OF LIST
+len
+repetition
+in
+not in
+max
+min
+**a=[1,234,435,23,12,]
+print(max(a))
+**a=[1,234,435,23,12,]
+print(min(a))
+**a=[1,234,435,23,12,]
+print(len(a))
+**a=[1,0,1,0,1]
+print(sum(a))
+all
+any
+list
+sort
+**a=[-9,-23,78,76,90,-45,-56]
+a.append(1)
+print(a)
+**a=[-9,-23,78,76,90,-45,-56]
+print(a.count(76))
+**a=[6,3,7,0,3,7,6,0]
+a.insert(3,100)
+print(a)
+**a=[6,3,7,0,3,7,6,0]
+a.remove(6)
+print(a)
+PUZZLE FOR TOWER OF HANOII
+**def hanoi(n,a,b,c):
+    if n>0:
+        hanoi(n-1,a,c,b)
+        if a:
+            c.append(a.pop())
+        hanoi(n-1,b,a,c)
+a=[1,2,3,4]
+b=[]
+c=[]
+hanoi(len(a),a,b,c)
+print(a,b,c)
+**n=[1,2,3,4,5,6,7,8,9]
+print(sum(n))
+***n=[1,2,3,4,5,6,7,8,9]
+n.reverse()
+print(n)
+**WRITE A PROGRAM TO COMBINE A LIST OF CUBES FOR A GIVEN NUMBER
+cubes=[i**3for i in range(11)];print(cubes)
+**list=[1,2,3,4]
+i=0
+for j in list:
+    print("index",i,"=", j)
+    i+=1
+**WASHING MACHINE CAPACITY
+n=int(input("enter a weight:"))
+if n==0:
+    print("Time Estimated : 0 Minutes")
+elif n in range(1,2001):
+    print("Time Estimated : 25 Minutes")
+elif n in range(2001,4001):
+    print("Time Estimated : 35 Minutes")
+elif n in range(4001,7001):
+    print("Time Estimated : 45 Minutes")
+else:
+    print("INVALID INPUT")
+**0,0,7,6,14,12,21,.....n find 15th term and 16th term
+ 
+n=int(input())
+l1=[]
+for i in range(1,n+1):
+    a=6*i
+    b=7*i
+    l1.append(a)
+    l1.append(b) 
+print(l1[n-1])
+
+     
