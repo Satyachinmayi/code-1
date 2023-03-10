@@ -1,0 +1,89 @@
+INHERITANCE:
+
+HEIRACHICAL INHERITANCE
+1)*class seeds:
+    def func0(self):
+        print("grows trees")
+        
+class trees(seeds):
+    def func1(self):
+        print("gives fruits")
+class fruits(trees):
+   def func2(self):
+        print("gives strength")
+class strength(fruits):
+   def func3(self):
+        print("good health")
+obj=trees()
+obj2=fruits()
+obj3=strength()
+obj.func0()
+obj.func1()
+obj2.func2()
+obj3.func3()
+
+
+2)*MULTIPLE INHERITANCE(METHOD OVERRIDDEN)
+class seeds:
+    def func0(self):
+        print("grows trees")
+        
+class trees:
+    def func1(self):
+        print("gives fruits")
+class fruits(seeds,trees):
+    pass
+obj=fruits()
+obj.func0()
+obj.func1()
+OUTPUT:
+grows trees
+gives fruits
+-------------------------------------------------------
+3)*ROCK PAPER SCISSOR
+
+import random
+computer_score=0
+user_score=0
+
+arr=["rock","paper","scissor"]
+for i in range (5):
+    computer_choice=random.randint(0,2)
+    computer_choice=arr[computer_choice]
+
+
+    user_choice=input("enter choice:").lower()
+    if user_choice not in arr:
+        print("invalid choice")
+    
+    if computer_choice=="rock" and  user_choice=="scissor":
+        print("Computer won!!")
+        computer_score+=1
+    elif computer_choice=="paper" and  user_choice=="rock":
+        print("Computer won!!") 
+        computer_score+=1
+    elif computer_choice=="scissor" and  user_choice=="paper":
+        print("Computer won!!")
+        computer_score+=1
+    elif computer_choice==user_choice:
+        print("DRAW MATCH")
+    else:
+        print("User Won!!")
+        user_score+=1
+    
+      
+    
+    
+if computer_choice>user_choice:
+    print("Computer won the match!!")
+elif user_choice>computer_choice:
+    print("User won the match!!")
+else:
+    print("Match Draw")
+    
+    
+------------------------------------------------------------------------------    
+    
+
+
+   

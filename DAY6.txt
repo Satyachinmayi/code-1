@@ -1,0 +1,66 @@
+fruits={
+    "apple":"red",
+    "mango":"yellow",
+    "grapes":"green",
+    "papaya":"orange",
+    "gauva":"green",
+}
+fruits.update({"banana":"Yellow"})
+print(fruits)
+print(fruits["grapes"])
+OUTPUT:
+{'apple': 'red', 'mango': 'yellow', 'grapes': 'green', 'papaya': 'orange', 'gauva': 'green', 'banana': 'Yellow'}
+green
+
+
+2)*
+fruits={
+    "apple":"red",
+    "mango":"yellow",
+    "grapes":"green",
+    "papaya":"orange",
+    "gauva":"green",
+}
+fruits.update({"banana":"Yellow"})
+print(fruits["grapes"])
+print(fruits.keys())
+print(fruits.items())
+print(fruits.values())
+OUTPUT:
+dict_keys(['apple', 'mango', 'grapes', 'papaya', 'gauva', 'banana'])
+dict_items([('apple', 'red'), ('mango', 'yellow'), ('grapes', 'green'), ('papaya', 'orange'), ('gauva', 'green'), ('banana', 'Yellow')])
+dict_values(['red', 'yellow', 'green', 'orange', 'green', 'Yellow'])
+
+3)*
+def saii(a,c):
+    print("addition is :",a+c)
+saii(2345,5678)
+OUTPUT:addition is :8023
+
+4)*
+def saii(a,b,c):
+    if c=="+":
+        print("addition is :",a+b)
+    if c=="-":
+        print("sub is :",a-b)
+    if c=="/":
+        print("div is :",a/b)
+saii(2345,5678 ,"/")    
+OUTPUT:div is : 0.41299753434307857
+
+5)*
+def fun(arr):
+    sum=0
+    for i in range(len(arr)):
+        sum=sum+arr[i]
+    print(sum)
+arr=[1,2,3,4,5]    
+fun(arr)
+OUTPUT:15
+
+**
+4TYPES OF FUNCTIONS
+1)REGULAR FUNCTION
+2)DEFAULT VALUE
+3)KEYWORD ARGUMENT
+4)VARIABLE LENGTH    

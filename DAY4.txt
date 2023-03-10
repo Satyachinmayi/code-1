@@ -1,0 +1,233 @@
+ABCEDERIAN SERIES:
+1)*
+str1='ABCDEFG'
+str2="ate"
+for l in str1:
+    print((l+str2),end=" ")
+OUTPUT:Aate Bate Cate Date Eate Fate Gate
+
+2)*WRITE A PROGRAM TO EVALUATE LISTS OF A CUBES TILL THE RANGE OF TEN
+cubes=[]
+for i in range(11):
+    cubes.append(i**3)
+print(cubes)
+     		OR
+cubes=[i**3 for i in range(11)];print(cubes)
+		OR
+cubes=[i**3 for i in range(11)]
+print(cubes)
+OUTPUT:[0, 1, 8, 27, 64, 125, 216, 343, 512, 729, 1000]
+
+3)*WRITE A PROGRAM TO FIND THE SUM AND MEAN OF SERIES 0-10
+List=[1,2,3,4,5,6,7,8,9,10]
+sum=0
+for i in List:
+    sum=sum+i
+print("sum is",sum)
+print("mean is",sum/len(List))
+OUTPUT:sum is 55
+       mean is 5.5
+
+4)*MAX AND MINIMUM NUMBERS IN A LIST
+M=[99,123,245,267,987,915,10892]
+print("Maximum number is",max(M))
+print("Minimum number is",min(M))
+print(len(M))
+OUTPUT:
+Maximum number is 10892
+Minimum number is 99
+7
+
+5)*SUM OF NUMBERS IN A LIST
+M=[99,123,245,267,987,915,10892]
+print(sum(M))
+OUTPUT:13528
+
+6)*SORT OF LIST
+LIST=[234,12,0,-99,43,456,789,-1045,567,234,-786,-45,-1234]
+print(sorted(LIST))
+               OR
+LIST=[234,12,0,-99,43,456,789,-1045,567,234,-786,-45,-1234]
+X=sorted(LIST)
+print(X)
+OUTPUT:[-1234, -1045, -786, -99, -45, 0, 12, 43, 234, 234, 456, 567, 789]
+*
+LIST=[234,12,0,-99,43,456,789,-1045,567,234,-786,-45,-1234]
+LIST.append(9)
+print(LIST)
+OUTPUT:[234, 12, 0, -99, 43, 456, 789, -1045, 567, 234, -786, -45, -1234, 9]
+
+*SORT AND APPEND
+LIST=[234,12,0,-99,43,456,789,-1045,567,234,-786,-45,-1234]
+X=sorted(LIST)
+X.append(9)
+print(X)
+OUTPUT:[-1234, -1045, -786, -99, -45, 0, 12, 43, 234, 234, 456, 567, 789, 9]
+
+7)*INSERT
+X=[234,12,0,-99,43,456,789,-1045,567,234,-786,-45,-1234]
+X.insert(9,222)
+print(X)
+OUTPUT:[234, 12, 0, -99, 43, 456, 789, -1045, 567, 222, 234, -786, -45, -1234]
+
+8)*REMOVE
+X=[234,12,0,-99,43,456,789,-1045,567,234,-786,-45,-1234]
+X.remove(12)
+print(X)
+OUTPUT:[234,0,-99,43,456,789,-1045,567,234,-786,-45,-1234]
+
+9)*PUZZLE FOR TOWER OF HANOII
+def hanoi(n,a,b,c):
+    if n>0:
+        hanoi(n-1,a,c,b)
+        if a:
+            c.append(a.pop())
+        hanoi(n-1,b,a,c)
+a=[1,2,3,4]
+b=[]
+c=[]
+hanoi(len(a),a,b,c)
+print(a,b,c)
+OUTPUT:[] [] [1, 2, 3, 4]
+
+10)*SUM
+num=[1,2,3,4,5,6,7,8,9,10]
+print(sum(num))
+OUTPUT:55
+
+*REVERSE
+num=[1,2,3,4,5,6,7,8,9,10]
+num.reverse()
+print(num)
+OUTPUT:[10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+
+*SORT
+num=['8','a','Xyz','7','b','abc','A']
+num.sort()
+print(num)
+OUTPUT:['7', '8', 'A', 'Xyz', 'a', 'abc', 'b']
+*
+ABC=['P','R','O','G','R','A','M']
+ABC[2:5]=[]
+print(ABC)
+OUTPUT:['P', 'R', 'A', 'M']
+
+11)*
+NUM=[1,2,3,4,5,6,7,8,9,10,11]
+index=0
+for i in NUM:
+    print("index(",index,")=",i)
+    index+=1
+OUTPUT:
+index( 0 )= 1
+index( 1 )= 2
+index( 2 )= 3
+index( 3 )= 4
+index( 4 )= 5
+index( 5 )= 6
+index( 6 )= 7
+index( 7 )= 8
+index( 8 )= 9
+index( 9 )= 10
+index( 10 )= 11
+
+12)*WASHING MACHINE PROGRAM
+n=int(input("Weight:"))
+if n==0:
+    print("0 minutes")
+elif n in range (1,2001):
+    print("25 minutes")
+elif n in range (2001,4001):
+    print("35 minutes")
+elif n in range(4001,7001):
+    print("45 minutes")
+else:
+    print("INVALID MAXIMUM LOAD")
+OUTPUT:
+Weight:6789
+45 minutes
+
+13)*15TH AND 16TH TERM OF A GIVEN SERIES 0,0,7,6,14,12,21
+n=int(input("ENTER NO:"))
+n=int(input("ENTER NO:"))
+l1=[]
+for i in range(0,n+1):
+    a=6*i
+    b=7*i
+    l1.append(a)
+    l1.append(b)
+print(l1[n-1],l1[n-2])
+OUTPUT:
+ENTER NO:15
+ENTER NO:16
+49 42
+
+14)**A DIGITAL MACHINE GENERATES BINARY DATA WHICH CONSISTS OF A STRING OF 0s AND 1S.A MAXIMUM SIGNAL OF M CONSISTS OF THE MAXIMUM NUMBER  
+ n=int(input())
+no=input()
+
+list1=list(no)
+k=list1[0]
+list1.pop(0)
+count=1
+for i in range(0,n):
+    if k==list1[i]:
+        list1.pop(i)
+        count+=1
+    else:
+        break
+
+l=list1[n-count-1]
+for i in range(n-count-1,-1,-1):
+    if l==list1[i]:
+        list1.pop(i)
+    else:
+        break
+
+max1=0
+store=0
+m=list1[0]
+for i in range(0,len(list1)):
+    if m==list1[i]:
+        max1+=1
+    else:
+        m=list1[i]
+        if max1>store:
+            store=max1
+        max1=1
+if max1>store:
+    store=max1
+print(store)           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

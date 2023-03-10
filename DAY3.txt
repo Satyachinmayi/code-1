@@ -1,0 +1,226 @@
+STRINGS:-
+1)*STRINGS
+txt='keerthi'
+index=0
+for i in txt:
+    print("message[",index,"]=",i)
+    index+=1
+
+2)*STRING UPPER
+txt='keerthi'
+print(txt.upper())
+
+*STRING LOWER
+txt='KEERTHI'
+print(txt.lower())
+
+*ZFILL FUNCTION
+txt='22'
+print(txt.zfill(8))
+OUTPUT:00000022
+
+*LSTRIP FUNCTION
+txt='hi students'
+print(txt.lstrip())
+
+*MAX FUNCTION
+txt='glucose'
+print(max(txt)
+
+*REPLACE FUNCTION
+txt='ke ke ke ke ke'
+print(txt.replace('k','e'))
+OUTPUT:ee ee ee ee ee
+
+*SWAPCASE
+txt='DONKEY AND MONKEY'
+print(txt.swapcase())
+OUTPUT:donkey and monkey
+
+*SPLIT FUNCTION
+txt='abc,def,ghi,jkl'
+print(txt.split(','))
+OUTPUT:['abc', 'def', 'ghi', 'jkl']
+
+*JOIN FUNCTION
+print('-'.join(['abc','def','ghi']))
+OUTPUT:abc-def-ghi
+
+*ENUMERATE
+txt='PYTHON PRO'
+print(list(enumerate(txt)))
+OUTPUT:[(0, 'P'), (1, 'Y'), (2, 'T'), (3, 'H'), (4, 'O'), (5, 'N'), (6, ' '), (7, 'P'), (8, 'R'), (9, 'O')]
+
+*
+txt='JAMESBOND'
+print(txt.islower())
+OUTPUT:False
+*
+txt='JAMESBOND'
+print(len(txt))
+OUTPUT:9
+*
+txt='JAMESBOND'
+print(txt.rjust(18,'@'))
+OUTPUT:@@@@@@@@@JAMESBOND
+*
+txt='JAMESBOND'
+print(txt.ljust(18,'@')
+OUTPUT:JAMESBOND@@@@@@@@@
+
+*
+txt="JAMESBOND"
+print(txt.center(18,'@'))
+OUTPUT:@@@@JAMESBOND@@@@@
+
+
+
+
+3)*ARMSTRONG
+n=int(input("enter a number"))
+s=0
+while (n!=0):
+    r=n%10
+    s=s+(r*r*r)
+    n=n//10
+if(s==n):
+    print("arm strong")
+else:
+    print("not an arm strong ")
+
+
+
+
+
+4)*
+txt='keerthana'
+print(txt)
+print(txt[1:5])
+print(txt[1:])
+print(txt[:4])
+print(txt[3])
+print(txt[-2])
+print(txt[::-1])
+print(txt[::2])
+OUTPUT:
+keerthana
+eert
+eerthana
+keer
+r
+n
+anahtreek
+ketaa
+
+*
+txt1='india is my country'
+txt2='i love my country'
+if txt2 in txt1:
+    print("present")
+else:
+    print("NOT PRESENT")
+OUTPUT: NOT PRESENT
+
+*
+txt1='india is my country'
+txt2='s '
+if txt2 in txt1:
+    print("present")
+else:
+    print("NOT PRESENT")
+
+OUTPUT:present
+
+*
+txt1='india is my country'
+for i in txt1:
+    print(i, end="::")
+OUTPUT:i::n::d::i::a:: ::i::s:: ::m::y:: ::c::o::u::n::t::r::y::
+
+*
+txt='india is my country'
+i=0
+while i<len(txt):
+    letter=txt[i]
+    print(letter, end="/")
+    i+=1
+OUTPUT:i/n/d/i/a/ /i/s/ /m/y/ /c/o/u/n/t/r/y/
+
+*
+n=int(input("enter number"))
+for i in range(1,n+1):
+    ch='A'
+    print()
+    for j in range(1,i+1):
+        print(ch, end='.')
+        ch= chr(ord(ch)+1)
+
+OUTPUT:
+enter number26
+
+A.
+A.B.
+A.B.C.
+A.B.C.D.
+A.B.C.D.E.
+A.B.C.D.E.F.
+A.B.C.D.E.F.G.
+A.B.C.D.E.F.G.H.
+A.B.C.D.E.F.G.H.I.
+A.B.C.D.E.F.G.H.I.J.
+A.B.C.D.E.F.G.H.I.J.K.
+A.B.C.D.E.F.G.H.I.J.K.L.
+A.B.C.D.E.F.G.H.I.J.K.L.M.
+A.B.C.D.E.F.G.H.I.J.K.L.M.N.
+A.B.C.D.E.F.G.H.I.J.K.L.M.N.O.
+A.B.C.D.E.F.G.H.I.J.K.L.M.N.O.P.
+A.B.C.D.E.F.G.H.I.J.K.L.M.N.O.P.Q.
+A.B.C.D.E.F.G.H.I.J.K.L.M.N.O.P.Q.R.
+A.B.C.D.E.F.G.H.I.J.K.L.M.N.O.P.Q.R.S.
+A.B.C.D.E.F.G.H.I.J.K.L.M.N.O.P.Q.R.S.T.
+A.B.C.D.E.F.G.H.I.J.K.L.M.N.O.P.Q.R.S.T.U.
+A.B.C.D.E.F.G.H.I.J.K.L.M.N.O.P.Q.R.S.T.U.V.
+A.B.C.D.E.F.G.H.I.J.K.L.M.N.O.P.Q.R.S.T.U.V.W.
+A.B.C.D.E.F.G.H.I.J.K.L.M.N.O.P.Q.R.S.T.U.V.W.X.
+A.B.C.D.E.F.G.H.I.J.K.L.M.N.O.P.Q.R.S.T.U.V.W.X.Y.
+A.B.C.D.E.F.G.H.I.J.K.L.M.N.O.P.Q.R.S.T.U.V.W.X.Y.Z.
+
+5)*WRITE A PROGRAM THAT ACCEPTS A STRING FROM THE USER AND RE DISPLAY THE SAME STRING AFTER REMOVING VOWELS FROM THE GIVEN STRING.
+
+
+
+
+**LISTS:-
+1)*
+list=[1,2,3,4,5,6,7,8,9,10]
+print(list)
+print(list[6])
+print(list[3:5])
+print(list[::3])
+print(list[1::3])
+print(list[9])
+OUTPUT:
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+7
+[4, 5]
+[1, 4, 7, 10]
+[2, 5, 8]
+10
+
+2)*
+list=[1,2,3,4,5,6,7,8,9,10]
+list[5]=100
+list[7]=1000
+list[6]=10000
+list[2]=999
+print(list)
+OUTPUT:[1, 2, 999, 4, 5, 100, 10000, 1000, 9, 10]
+
+
+
+
+
+
+
+
+    
